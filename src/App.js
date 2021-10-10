@@ -17,6 +17,7 @@ function App() {
 		halloween = halloween.setFullYear(thisYear + 1);
 		daysDiff = differenceInCalendarDays(halloween, curDate);
 	}
+
 	return (
 		<div className={`App ${daysDiff ? `App__not` : "App_halloween"}`}>
 			<AppHeader />
