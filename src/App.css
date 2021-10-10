@@ -5,10 +5,21 @@
 
 .App__header {
 	width: 100%;
+	margin-top: 3rem;
 }
 
 .Card {
 	background-color: dodgerblue;
 	border-radius: 5px;
 	box-shadow: 1px 2px 3px gray;
+	display: flex;
+	justify-content: center;
+	margin: 2rem;
+	padding: 0.5rem;
+}
+
+@media screen and (min-width: 700px) {
+	.Card {
+		margin: 2rem 20vw;
+	}
 }
