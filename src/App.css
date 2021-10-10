@@ -21,13 +21,12 @@ code {
 /* App */
 
 .App {
-	height: 100vh;
 	text-align: center;
 }
 
 .App__header {
 	width: 100%;
-	margin-top: 3rem;
+	margin-top: 4rem;
 }
 
 /* Card */
@@ -51,4 +50,19 @@ code {
 
 .countdown {
 	font-size: 1.5rem;
+}
+
+/* Progress Bar */
+/* border: solid #380d0d; */
+
+.progress-bar {
+	width: 100%;
+	border: solid #1c1c1c 1px;
+	border-radius: 3px;
+	background-color: honeydew;
+}
+
+.progress-bar__fill {
+	background-color: #380d0d;
+	height: 1rem;
 }
