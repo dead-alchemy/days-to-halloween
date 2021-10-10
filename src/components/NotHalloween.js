@@ -1,7 +1,6 @@
 const NotHalloween = ({daysDiff}) => {
 	return (
-		<div>
-			<div> Days Left to Halloween:</div>
+		<div className="countdown">
 			<div>{daysDiff}</div>
 		</div>
 	);

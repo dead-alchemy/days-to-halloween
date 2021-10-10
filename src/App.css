@@ -32,7 +32,7 @@ code {
 
 /* Card */
 .Card {
-	background-color: dodgerblue;
+	background-color: #f7da97;
 	border-radius: 5px;
 	box-shadow: 1px 2px 3px gray;
 	display: flex;
@@ -45,4 +45,10 @@ code {
 	.Card {
 		margin: 2rem 20vw;
 	}
+}
+
+/* Countdown */
+
+.countdown {
+	font-size: 1.5rem;
 }
