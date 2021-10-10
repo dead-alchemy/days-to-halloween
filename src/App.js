@@ -1,4 +1,5 @@
 import "./App.css";
+import Card from "./UI/Card";
 import AppHeader from "./components/AppHeader";
 import DaysTo from "./components/DaysTo";
 
@@ -6,7 +7,9 @@ function App() {
 	return (
 		<div className="App">
 			<AppHeader />
-			<DaysTo />
+			<Card>
+				<DaysTo />
+			</Card>
 		</div>
 	);
 }
