@@ -1,22 +1,17 @@
-import {differenceInCalendarDays} from "date-fns";
+import AppHeader from "./AppHeader";
 import NotHalloween from "./NotHalloween";
 import Halloween from "./Halloween";
 
-const DaysTo = () => {
-	const curDate = new Date();
-	const thisYear = curDate.getFullYear();
-	let halloween = new Date(thisYear, 9, 31);
-	let daysDiff = differenceInCalendarDays(halloween, curDate);
-
-	if (daysDiff < 0) {
-		halloween = halloween.setFullYear(thisYear + 1);
-		daysDiff = differenceInCalendarDays(halloween, curDate);
-	}
-
+const DaysTo = ({daysDiff, totalDays}) => {
 	if (daysDiff === 0) {
 		return <Halloween />;
 	} else {
-		return <NotHalloween daysDiff={daysDiff} />;
+		return (
+			<div>
+				<AppHeader />
+				<NotHalloween daysDiff={daysDiff} totalDays={totalDays} />
+			</div>
+		);
 	}
 };
 

@@ -1,0 +1,5 @@
+.App_halloween__animation {
+	-webkit-animation: rotate-scale-up 0.65s
+		cubic-bezier(0.895, 0.03, 0.685, 0.22);
+	animation: rotate-scale-up 0.65s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}

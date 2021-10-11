@@ -1,8 +1,16 @@
-const NotHalloween = ({daysDiff}) => {
+import ProgressBar from "./ProgressBar";
+import Card from "../UI/Card";
+
+const NotHalloween = ({daysDiff, totalDays}) => {
 	return (
-		<div>
-			<div> Days Left to Halloween:</div>
-			<div>{daysDiff}</div>
+		<div className="countdown">
+			<Card>
+				<div>{daysDiff}</div>
+			</Card>
+
+			<Card>
+				<ProgressBar daysDiff={daysDiff} totalDays={totalDays} />
+			</Card>
 		</div>
 	);
 };

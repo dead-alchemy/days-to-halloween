@@ -1,7 +1,7 @@
 const AppHeader = () => {
 	return (
 		<header className="App__header">
-			<h1>Days to halloween</h1>
+			<h1>Days to Halloween</h1>
 		</header>
 	);
 };
