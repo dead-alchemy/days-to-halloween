@@ -29,15 +29,25 @@ code {
 	margin-top: 4rem;
 }
 
+.App_halloween {
+	margin-top: 1rem;
+	font-size: 2rem;
+	color: #e8e8e8;
+	font-weight: 700;
+}
+
 /* Card */
 .Card {
-	background-color: #f7da97;
 	border-radius: 5px;
 	box-shadow: 1px 2px 3px gray;
 	display: flex;
 	justify-content: center;
 	margin: 2rem;
 	padding: 0.5rem;
+}
+
+.Card__AltColor {
+	background-color: #380d0d;
 }
 
 @media screen and (min-width: 700px) {
