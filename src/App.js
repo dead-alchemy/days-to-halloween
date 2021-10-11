@@ -6,7 +6,7 @@ import "./App.css";
 import DaysTo from "./components/DaysTo";
 
 function App() {
-	const curDate = new Date(2021, 9, 31);
+	const curDate = new Date();
 	let thisYear = curDate.getFullYear();
 	let halloween = new Date(thisYear, 9, 31);
 	let daysDiff = differenceInCalendarDays(halloween, curDate);
