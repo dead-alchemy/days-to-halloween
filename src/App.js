@@ -2,11 +2,11 @@ import {differenceInCalendarDays} from "date-fns";
 
 import "./normalize.css";
 import "./App.css";
-import AppHeader from "./components/AppHeader";
+
 import DaysTo from "./components/DaysTo";
 
 function App() {
-	const curDate = new Date();
+	const curDate = new Date(2021, 9, 31);
 	let thisYear = curDate.getFullYear();
 	let halloween = new Date(thisYear, 9, 31);
 	let daysDiff = differenceInCalendarDays(halloween, curDate);
@@ -24,7 +24,6 @@ function App() {
 
 	return (
 		<div className={`App ${daysDiff ? `App__not` : "App_halloween"}`}>
-			<AppHeader />
 			<DaysTo daysDiff={daysDiff} totalDays={totalDays} />
 		</div>
 	);
