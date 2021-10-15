@@ -1,8 +1,8 @@
 {
 	"short_name": "Days to Halloween",
 	"name": "Days to Halloween",
-	"start_url": "",
+	"start_url": ".",
 	"display": "standalone",
-	"theme_color": "#000000",
-	"background_color": "#ffffff"
+	"theme_color": "#b8a1c2",
+	"background_color": "#b8a1c2"
 }
